@@ -118,7 +118,30 @@ syntex
 #     print(str,end="")
 
 '''Read a complete file - line by line '''
-f=open("classes/new.txt","r")
-for i in f:
-    print(i)
+# f=open("classes/new.txt","r")
+# for i in f:
+#     print(i)
+    
+
+''' a program to display the size of file in bytes'''
+
+# f=open("classes/new.txt","r")
+# str=f.read()
+# print(f"size is {len(str)}")
+
+''' a program to display the number of lines in the file '''
+# f=open("classes/new.txt","r")
+# str=f.readlines()
+# print(f'size is {len(str)}')
+
+
+#writing file /append in a file
+
+'''create a file to hold some data'''
+# f=open("classes/new1.txt","w+")
+# for i in range(0,5):
+#     user=input("enter a name : ")
+#     f.write(user)                #write does not add a new line character on its own
+#     f.write('\n')
+# f.close()
     
