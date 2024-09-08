@@ -46,3 +46,79 @@ sr.|text file Mode|Binary file mode | Description| Noted
 5  |    'w+'      |   'w+b'or'wb+'  |write & read| if the file not exist , file is created 2.) if the file exist file is truncated (past data will be lost)3.) both reading and writting task can take place   
 6  |    'a+'      |   'a+b'or'ab+'  |write & read| if the file not exist , file is created 2.) if the file exist file's existing data retained new data is appended 3.) both reading and writting task can take place   
 '''
+
+#closing files 
+
+
+'''
+An open file is closed by calling the close() method of its file-object 
+closing file is a good practise
+-->>>> a close() method breaks the link of file-object and the file on the disk.After this no task can be performed on that file through the file-object
+
+
+syntex
+
+<fileHandle>.close()     
+'''
+
+# working with text files 
+
+'''
+1.) read() -- <fileHandle>.read([n])  -----> reads at most n bytes ; if no n is specified, reads the entire file
+
+'''
+
+# f=open("classes/new.txt","r")
+# # file_handle=f.read()           # it will read entire file f
+# file_handle=f.read(100)           # it will read 100 bytes means 100 words
+# print(file_handle)
+
+'''
+1.) readline() -- <fileHandle>.readline([n])  -----> reads a line of input ; if  n is specified, reads at most n bytes 
+2.) readlines() -- <fileHandle>.readlines()  -----> reads all the lines and returns them in a list 
+
+'''
+
+# ........................practise............................
+
+# my_file=open('classes/new.txt','r')
+# str=my_file.read(30)
+# print(str)
+
+'''if want to use file() and open() with the file object's function''' 
+
+# my=open('classes/new.txt','r').read(30)
+# print(my)
+
+''' reading 'n' bytes and then reading some more bytes from the last postion read'''
+
+# f=open("classes/new.txt",'r')
+# str=f.read(30,)
+# print(str,end="")
+# str=f.read(50)     # it will start reading after n bytes where it left initally
+# print(str)
+# f.close()
+
+'''Reading a file's entire content'''
+
+# f=open("classes/new.txt","r")
+# str=f.read()
+# print(str)
+
+
+
+# f=open("classes/new.txt").read()
+# print(f)
+
+'''Reading a file's first three lines'''
+
+# f=open("classes/new.txt","r")
+# for i in range(0,3):
+#     str=f.readline()
+#     print(str,end="")
+
+'''Read a complete file - line by line '''
+f=open("classes/new.txt","r")
+for i in f:
+    print(i)
+    
