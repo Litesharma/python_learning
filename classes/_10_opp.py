@@ -134,22 +134,22 @@ and create methods to credit , debit and printing the balance
 
 '''
 
-class Account:
-    def __init__(self,balance,accountNum):
-        self.balance=balance
-        self.accountNum=accountNum
+# class Account:
+#     def __init__(self,balance,accountNum):
+#         self.balance=balance
+#         self.accountNum=accountNum
     
-    def credit(self,creditAmount):
-        self.balance+=creditAmount
-        print(f"{creditAmount} is credited in your account {self.accountNum}\nTotal availiable balance is {self.balance} ")
-    def debit(self,debitAmount):
-        self.balance-=debitAmount
-        print(f"{debitAmount} is debited from your account {self.accountNum}\nTotal availiable balance is {self.balance} ")
-    def checkBal(self):
-        print(f"Total available balance is {self.balance}")
+#     def credit(self,creditAmount):
+#         self.balance+=creditAmount
+#         print(f"{creditAmount} is credited in your account {self.accountNum}\nTotal availiable balance is {self.balance} ")
+#     def debit(self,debitAmount):
+#         self.balance-=debitAmount
+#         print(f"{debitAmount} is debited from your account {self.accountNum}\nTotal availiable balance is {self.balance} ")
+#     def checkBal(self):
+#         print(f"Total available balance is {self.balance}")
         
-balance = float(input("Enter your total balance: "))
-accountNum = int(input("Enter your account number: "))
+# balance = float(input("Enter your total balance: "))
+# accountNum = int(input("Enter your account number: "))
 
-user=Account(balance,accountNum)
-user.debit(2000)
+# user=Account(balance,accountNum)
+# user.debit(2000)
